@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/painel-de-controle.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/escola.css">
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <title>Escolas</title>
+</head>
+<body>
+    <header>
+        <div class="home">
+            <a href="index.html">
+                <img src="assets/img/silhueta-de-icone-de-casa 2.png" alt="botao home" width="28px" height="28px">
+        </a>
+        </div>
+        <div class="titulo">
+            <h1>Dashboard de Gestão Educacional 2022 | Escolas</h1>
+        </div>
+        <div class="logo">
+            <img src="assets/img/inep.svg" alt="Imagem Logo INEP" width="100px" height="100px">
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <aside class="h-full" style="width: 400px; height: 700px; background-color: #9BB0E5; border-radius: 20px;">
+                <div class="titulo-filtros">
+                    <p>Filtros</p>
+                </div>
+                <label for="filtro">Filtrar por:</label>
+                <select id="filtro">
+                    <option value="dependencia">Dependência</option>
+                    <option value="situacao">Situação</option>
+                    <option value="localizacao">Localização</option>
+                    <option value="internet">Internet</option>
+                </select>
+                <hr>
+                <div id="filtros-especificos">
+                    <!-- Opções de Dependência -->
+                    <div id="dependencia">
+                        <label for="dependencia">Dependência</label>
+                        <select id="dependenciaSelect">
+                            <option value="Estadual">Estadual</option>
+                            <option value="Federal">Federal</option>
+                            <option value="Municipal">Municipal</option>
+                            <option value="Privada">Privada</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <!-- Opções de Situacao Funcionamento -->
+                    <div id="situacaoContainer">
+                        <label for="situacao">Situação</label>
+                        <select id="situacaoSelect">
+                            <option value="Em-atividade">Em Atividade</option>
+                            <option value="Inativa">Inativa</option>
+                            <option value="Paralisada">Paralisada</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <!-- Opções de Localizacao -->
+                    <div id="localizacaoContainer">
+                        <label for="localizacao">Localização</label>
+                        <select id="localizacaoSelect">
+                            <option value="Urbano">Urbano</option>
+                            <option value="Rural">Rural</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <!-- Opções de Internet -->
+                    <div id="internetContainer">
+                        <label for="internet">Internet</label>
+                        <select id="internetSelect">
+                            <option value="Possui-acesso">Possui Acesso</option>
+                            <option value="Nao-possui-acesso">Não possui acesso</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="buttons-filtros">
+                    <div class="aplicar-filtros">
+                        <button onclick="aplicarFiltros()">Aplicar Filtros</button>
+                    </div>
+                    <div class="limpar-filtros">
+                        <button onclick="limparFiltros()">Limpar Filtros</button>
+                    </div>
+                </div>
+                
+            </aside>
+        </div>
+    
+        <div class="graficos">
+            <div class="grafico" id="pizza">
+                 <button onclick="exportarGrafico('grafico-pizza')">Exportar Gráfico</button>
+                 <canvas id="grafico-pizza"></canvas>
+     </div>
+     
+     <div class="grafico" id="line">
+         <button onclick="exportarGrafico('grafico-linha')">Exportar Gráfico</button>
+         <canvas id="grafico-linha"></canvas>
+     </div>
+ 
+     <div class="grafico" id="bar">
+         <button onclick="exportarGrafico('grafico-barra')">Exportar Gráfico</button>
+         <canvas id="grafico-barra"></canvas>
+     </div>
+ 
+     <div class="grafico" id="horizontal-bar">
+         <button onclick="exportarGrafico('grafico-horizontal-bar')">Exportar Gráfico</button>
+         <canvas id="grafico-horizontal-bar"></canvas>
+     </div>
+ </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="about">
+            <a href="sobre.html">Sobre o Dashboard</a>
+        </div>
+        <div class="creators">
+            <p>Arthur Vinícius, Gabriel Henrique, Luiz Henrique e Yuri Catunda</p>
+        </div>
+
+        <div class="links">
+            <div class="contact">
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

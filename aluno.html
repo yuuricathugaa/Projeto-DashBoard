@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/painel-de-controle.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/aluno.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <title>Alunos</title>
+</head>
+<body>
+    <header>
+        <div class="home">
+            <a href="index.html">
+                <img src="assets/img/silhueta-de-icone-de-casa 2.png" alt="botao home" width="28px" height="28px">
+            </a>
+        </div>
+        <div class="titulo">
+            <h1>Dashboard de Gestão Educacional 2022 | Alunos</h1>
+        </div>
+        <div class="logo">
+            <img src="assets/img/inep.svg" alt="Imagem Logo INEP" width="100px" height="100px">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <aside class="h-full" style="width: 400px; height: 700px; background-color: #9BB0E5; border-radius: 20px;">
+                <div class="titulo-filtros">
+                    <p>Filtros</p>
+                </div>
+                <label for="filtro">Filtrar por:</label>
+                <select id="filtro">
+                    <option value="cor_raca_etnia">Cor/Raça</option>
+                    <option value="etapa_ensino">Etapa de Ensino</option>
+                    <option value="genero">Gênero</option>
+                    <option value="idade">Idade</option>
+                </select>
+                <hr>
+                <div id="filtros-especificos">
+                    <!-- Opções de Escolaridade -->
+                    <div id="etapa_ensinoContainer">
+                        <label for="etapa_ensino">Escolaridade</label>
+                        <select id="etapa_ensinoSelect">
+                            <option value="Infantil">Ensino Infantil</option>
+                            <option value="Fundamental">Ensino Fundamental</option>
+                            <option value="Medio">Ensino Médio</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <!-- Opções de Idade -->
+                    <div id="idadeContainer">
+                        <label for="idade">Idade:</label>
+                        <select id="idadeSelect">
+                            <option value="03">0 à 3 anos</option>
+                            <option value="45">4 à 5 anos</option>
+                            <option value="610">6 à 10 anos</option>
+                            <option value="1114">11 à 14 anos</option>
+                            <option value="1517">15 à 17 anos</option>
+                            <option value="18mais">18 anos ou mais</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <!-- Opções de Raça -->
+                    <div id="cor_raca_etniaContainer">
+                        <label for="cor_raca_etnia">Raça</label>
+                        <select id="cor_raca_etniaSelect">
+                            <option value="Amarelo">Amarelo</option>
+                            <option value="Branco">Branco</option>
+                            <option value="Indigena">Indígena</option>
+                            <option value="Pardo">Pardo</option>
+                            <option value="Preto">Preto</option>
+                        </select>
+                        <hr>
+                    </div>
+                    <!-- Opções de Gênero -->
+                    <div id="generoContainer">
+                        <label for="genero">Gênero</label>
+                        <select id="generoSelect">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttons-filtros">
+                    <div class="aplicar-filtros">
+                        <button onclick="aplicarFiltros()">Aplicar Filtros</button>
+                    </div>
+                    <div class="limpar-filtros">
+                        <button onclick="limparFiltros()">Limpar Filtros</button>
+                    </div>
+                </div>
+                
+            </aside>
+        </div>
+    
+        <div class="graficos">
+           <div class="grafico" id="pizza">
+                <button onclick="exportarGrafico('grafico-pizza')">Exportar Gráfico</button>
+                <canvas id="grafico-pizza"></canvas>
+    </div>
+    
+    <div class="grafico" id="line">
+        <button onclick="exportarGrafico('grafico-linha')">Exportar Gráfico</button>
+        <canvas id="grafico-linha"></canvas>
+    </div>
+
+    <div class="grafico" id="bar">
+        <button onclick="exportarGrafico('grafico-barra')">Exportar Gráfico</button>
+        <canvas id="grafico-barra"></canvas>
+    </div>
+
+    <div class="grafico" id="horizontal-bar">
+        <button onclick="exportarGrafico('grafico-horizontal-bar')">Exportar Gráfico</button>
+        <canvas id="grafico-horizontal-bar"></canvas>
+    </div>
+</div>
+    </div>
+    <footer class="footer">
+        <div class="about">
+            <a href="sobre.html">Sobre o Dashboard</a>
+        </div>
+        <div class="creators">
+            <p>Arthur Vinícius, Gabriel Henrique, Luiz Henrique e Yuri Catunda</p>
+        </div>
+
+        <div class="links">
+            <div class="contact">
+                <a href="contato.html">Contato</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
