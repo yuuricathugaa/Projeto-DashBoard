@@ -9,9 +9,9 @@ Concluído. Sujeito à atualizações!
 - O objetivo desse projeto proporcionar uma visão abrangente, unificada, eficiente, intuitiva e pertinente da situação atual do sistema de educação básica do País. O Sistema de Dashboard permitirá acompanhamento e visualização clara e concisa de informações relacionadas as situações das escolas e dos alunos ao redor do Brasil, garantindo uma gestão eficaz e promovendo a excelência na educação brasileira
 
 ## Informações adicionais
-- [Site🔎:](https://projeto-dashboard-inep.vercel.app/)
-- [Slides📟:](https://www.canva.com/design/DAF2DKyMwOw/s4ChD43ZEPfR-q8y8aqP3A/edit?utm_content=DAF2DKyMwOw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [Protótipo Navegável📱:](https://www.figma.com/proto/5pLBQwoBKsOqfWogGG2P9P/Dashboard-Inep-2.0?type=design&node-id=1-2&t=xIQO3z48lLsVADI9-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design)
+- [Site do Projeto🔎](https://projeto-dashboard-inep.vercel.app/)
+- [Slides📟](https://www.canva.com/design/DAF2DKyMwOw/s4ChD43ZEPfR-q8y8aqP3A/edit?utm_content=DAF2DKyMwOw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Protótipo Navegável📱](https://www.figma.com/proto/5pLBQwoBKsOqfWogGG2P9P/Dashboard-Inep-2.0?type=design&node-id=1-2&t=xIQO3z48lLsVADI9-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design)
 
 ## 👥 Criadores
 - Lider: [Yuri Catunda](https://github.com/yuuricathugaa)
