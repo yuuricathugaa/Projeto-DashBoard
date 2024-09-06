@@ -1,7 +1,13 @@
 #  Projeto de Dashboard INEP
 
-## 💻 Status do Projeto
-Concluído. Sujeito à atualizações!
+## 💻 Descrições do Projeto
+Algumas Ferramentas Utilizadas:
+
+- HTML
+- CSS
+- PostGreSQL
+- JavaScript
+- Node.js
 
 ## 📄 Sobre o Projeto
  - O Dashboard de Gestão Educacional 2022 é uma solução proposta em formato de sistema de gerenciamento e visualização de dados baseado em dados fornecidos pelo próprio INEP em seu site [microdados INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar)
